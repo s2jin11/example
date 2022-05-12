@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="img/bg.jpg" alt="bg" id="bg">
+        <img src="img/moon.png" alt="moon" id="moon">
+        <img src="img/mountain.png" alt="mountain" id="mountain">
+        <img src="img/road.png" alt="road" id="road">
+        <h2 id="text">PORTFOLIO</h2>
+    </section>
+    <section class="content">
+        <h3>parallax background scrolling</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vitae doloremque, debitis cupiditate quidem at in fugit perspiciatis commodi voluptate vel, eius sit pariatur neque voluptatem ullam explicabo, mollitia modi quaerat. Expedita laudantium nobis, obcaecati vitae placeat ipsa molestiae, dignissimos cumque temporibus corporis magnam saepe assumenda qui aliquid similique, atque facilis aspernatur vero voluptas nisi. Consequuntur pariatur, consectetur iure id possimus magnam quo debitis dolorum quos temporibus earum odit a cupiditate reiciendis architecto quam reprehenderit sed harum illum totam! Ipsa aspernatur odit rerum quos! Magni blanditiis consequuntur molestias quo tempore at nesciunt porro consequatur! Repudiandae maiores earum sed natus corporis fugiat et illo unde fugit ea doloremque, nisi laboriosam esse possimus ipsam reprehenderit porro quos rerum modi distinctio? Magnam ducimus totam cumque placeat fugit tenetur nihil, dolores deserunt pariatur provident necessitatibus iure eligendi aliquid dolor nisi ex tempore nostrum exercitationem nam obcaecati similique. Explicabo velit dolor blanditiis suscipit nisi iure a, libero porro voluptas ratione modi voluptate eaque facere saepe, quos nihil, eveniet aliquid adipisci quaerat autem! Quasi consequatur cumque, reprehenderit ipsam iure quaerat eos, expedita sit odit explicabo nulla quo molestiae! Quaerat perferendis assumenda in iste ex distinctio perspiciatis quia consequuntur explicabo molestias, nihil nobis repellat dolorem ipsum! Sit?</p>
+    </section>
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+        <script>
+            var $window = $(window);
+            var bg = $('#bg');
+            var moon = $('#moon');
+            var mountain = $('#mountain');
+            var road = $('#road');
+            var text = $('#text');
+
+            //window.scroll();
+            //window에 scroll을 움직일때 마다 어떤일이 일어난다 
+            $window.scroll(function(){
+                var value = $(this).scrollTop();
+                //$(this)는 window를 의미한다
+                console.log(value);
+
+
+                bg.css({top:value * 0.2 + "px"})
+                moon.css({left: -value * 0.5 + "px", top:value * 0.4 + "px", opacity: 1 - (value * 0.002)})
+                mountain.css({top: -value * 0.15 + "px"})
+                road.css({top:value * 0.15 + "px"})
+                text.css({top:value + "px"})
+            });
+        </script>
+</body>
+</html>
