@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+*{margin: 0; padding: 0;}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.text{
+    position: fixed;
+    left: 10px; top: 10px;
+    font-weight: bold;
+    z-index: 9999;}
+.bg{
+    position: fixed;
+    top: 0; left: 0; 
+    width: 100%; height: 100vh;}
+
+.bg img{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    color: #fff;
+    background: center;
+}
+
+.slide_content{
+    position: relative;
+    width: 60%; margin: 0 auto;
+}
+/* //slide02// */
+.slide02 img{
+    position: absolute;
+    top: 80px;
+    left: 384px;
+}
+.slide02 h2{
+    position: absolute;
+    top: 89px;
+    left: 204px;
+    font-size: 40px;
+}
+.slide02 p{
+    position: absolute;
+    top: 193px;
+    left: 241px;
+    font-size: 27px;
+}
+.slide02 p::before{
+    position: absolute;
+    content: "\f10d";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: -40px;
+    top: 28px;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+}
+.slide02 p::after{
+    position: absolute;
+    content: "\f10e";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: 212px;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+}
+
+
+/* //slide03// */
+.slide03 img{
+    position: absolute;
+    top: 60px;
+    left: 903px;
+}
+.slide03 h2{
+    position: absolute;
+    top: 86px;
+    left: -350px;
+    font-size: 40px;
+}
+.slide03 p{
+    position: absolute;
+    top: 202px;
+    left: -327px;
+    font-size: 27px;
+}
+.slide03 p::before{
+    position: absolute;
+    content: "\f10d";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: -40px;
+    top: 28px;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+}
+.slide03 p::after{
+    position: absolute;
+    content: "\f10e";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: 277px;
+    top: 144px;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+}
+/* //slide04 */
+.slide04 img{
+    position: absolute;
+    top: 69px;
+    left: 355px;
+}
+
+.slide04 h2{
+    position: absolute;
+    top: 89px;
+    left: 122px;
+    font-size: 40px;
+}
+.slide04 p{
+    position: absolute;
+    top: 195px;
+    left: 128px;
+    font-size: 27px;
+}
+.slide04 p::before{
+    position: absolute;
+    content: "\f10d";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: -40px;
+    top: 28px;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+}
+.slide04 p::after{
+    position: absolute;
+    content: "\f10e";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: 346px;
+    top: 142px;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+}
+
+/* //slide05// */
+.slide05{color: #000;}
+.slide05 img{
+    position: absolute;
+    top: 13px;
+    left: 958px;
+}
+.slide05 h2{
+    position: absolute;
+    top: 130px;
+    left: -271px;
+    font-size: 40px;
+}
+.slide05 p{
+    position: absolute;
+    top: 228px;
+    left: -253px;
+    font-size: 27px;
+}
+.slide05 p::before{
+    position: absolute;
+    content: "\f10d";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: -40px;
+    top: 28px;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+}
+.slide05 p::after{
+    position: absolute;
+    content: "\f10e";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: 273px;
+    top: 144px;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+}
+
+
+
+
+/* //con// */
+.con1{
+    position: absolute;
+    top: 327px;
+    left: 591px;
+}
+.con2{
+    position: absolute;
+    top: 256px;
+    left: 907px;
+    z-index: 9999;
+}
+.con3{
+    position: absolute;
+    top: 275px;
+    left: 765px;
+    z-index: 9999;
+}
+
+.con4{
+    position: absolute;
+    top: 258px;
+    left: 1000px;
+    z-index: 9999;
+}
+.con5{
+    position: absolute;
+    top: 269px;
+    left: 789px;
+    z-index: 9999;
+}
+.con6{
+    position: absolute;
+    top: 241px;
+    left: 726px;
+    z-index: 9999;
+}
+
+.con6 h2{
+    top: 128px;
+    left: 200px;
+    position: absolute;
+    font-weight: bold;
+    color: #001D6E;
+}
+.con6 p{
+    top: 425px;
+    left: 380px;
+    font-size: 30px;
+    position: absolute;
+    color: #001D6E;
+    font-weight: bold;
+}
+
+.logo img{
+    position: absolute;
+    top: 441px;
+    left: 2100px;
+    width: 30%;
+    height: 223px;
+}
+
+
+

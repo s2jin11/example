@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text">0</div>
+    <div class="bg"
+    data-0="top:0%; transform:rotate(0deg); opacity:1"
+    data-1000= "transform:rotate(360deg);"
+    data-1500="top:100%; opacity:0 ">
+    <img src="img/poster.jpg" alt="iogo"></div>
+    
+
+    <section class="slide02 slide"
+    data-1000="transform:translateX(100%); background-color:#FF6363;"
+    data-1300="transform:translateX(0%); opacity:1"
+    data-2500="transform:translateX(-100%); opacity:0">
+    <img src="img/seo1.png" alt="seo1">
+   <div class="slide_content con2">
+       <h2> 한세계 / 서현진 </h2>
+       <p><br> 다음 달에도<br>
+        날, 알아볼 건가요?</p>
+   </div>
+    </section>
+
+    <section class="slide03 slide"
+    data-1800="top:100%; background-color:#242F9B;"
+    data-2500="top:0%; opacity:1"
+    data-3500="opacity:0">
+    <img src="img/lee1.png" alt="lee1">
+    <div class="slide_content con3">
+    <h2> 서도재 / 이민기 </h2>
+    <p><br>걱정마<br>
+       다른 사람 못 알아봐도<br>
+       당신 만은 알아볼 거니까</p>
+    </div></section>
+    
+    <section class="slide04 slide"
+    data-2800="left:-100%; background-color:#F32424"
+    data-4000="left:0%; opacity: 1"
+    data-5500="left:100%; opacity:0">
+    <img src="img/da1.png" alt="da1">
+   <div class="slide_content con4">
+       <h2> 강사라 / 이다희 </h2>
+       <p><br>난, 내가 원하는 거<br>
+              다 가질 수 있어 <br>
+              그게 신과 싸우는 사랑이라도 !</p>
+   </div></section>
+
+    <section class="slide05 slide"
+    data-4500="top:100%; background-color:#FFE61B"
+    data-5500="top:0%; opacity:1"
+    data-6000="opacity:0">
+        <img src="img/jae1.png" alt="jae1">
+        <div class="slide_content con5">
+            <h2> 류은호 / 안재현 </h2>
+            <p><br>신이시여<br>
+                   저를, 시험에 아니 <br>
+                   사랑에 들지 않게 하소서</p>
+        </div>
+    </section>
+
+    <section class="slide06 slide"
+    data-6500="transform:translateX(100%); background-color:#FFC4DD;"
+    data-7000="transform:translateX(0%);">
+          <div class="logo"
+          data-6800="transform:translateX(0%) scale(0);"
+          data-7800="transform:translateX(-50%) scle(1);">
+         <img src="img/logo.png" alt="logo">
+         </div>
+       <div class="slide_content con6">
+           <h2>JTBC 월화드라마</h2>
+           <P>매주 [월.화] 밤 9시 30분 방송</P>
+       </div></section>
+
+
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="skrollr.min.js"></script>
+    <script>
+          var s = skrollr.init();
+
+
+        $(window).scroll(function(){
+            var wScroll = parseInt($(this).scrollTop()); /* parseInt():정수값으로 변환 */
+        
+            $('.text').text(wScroll)
+        });
+    </script>
+</body>
+</html>
